@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  min-width: 1800px;
+}
+
+.header {
+  max-width: 1800px;
+  overflow: hidden;
+  max-height: 1080px;
+  color: #fff;
+  background: #141024;
+  padding: 30px 50px;
+  margin: 0 0 30px 0;
+}
+.header a {
+  color: #fff;
+}
+.header__contaiter {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 40px 0;
+}
+.header__logo {
+  font-size: 30px;
+}
+.header__list {
+  font-size: 20px;
+  display: flex;
+}
+.header__list li {
+  margin: 0 30px;
+}
+.header__list a {
+  color: #fff;
+}
+.header__list a:hover {
+  color: yellow;
+}
+.header__tel {
+  font-size: 30px;
+}
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px 0 100px;
+}
+.header__SignUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.SignUp__title {
+  font-size: 70px;
+}
+.SignUp__text {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 40px 0;
+}
+.SignUp__btn {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 260px;
+  min-height: 80px;
+  background: #ff0000;
+  padding: 20px;
+}
+.SignUp__img {
+  max-width: 100%;
+  position: relative;
+  top: 15px;
+}
+
+.main {
+  max-width: 1800px;
+  padding: 100px 100px 100px 300px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 100vh;
+}
+.main__text {
+  font-size: 30px;
+  line-height: 48px;
+  margin: 0 0 30px 0;
+}
+.main__text span {
+  font-weight: 600;
+}
+
+.num {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 70px;
+  font-weight: 600;
+  color: #ff0000;
+}
+
+.achievements {
+  display: flex;
+  margin: 100px 0 100px 0;
+}
+.achievements__item {
+  margin: 0 20px;
+}
+.achievements__numText {
+  color: rgba(20, 16, 36, 0.6980392157);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.whatGet {
+  margin: 100px 0 100px 0;
+}
+.whatGet__title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 80px;
+}
+.whatGet__titleInfo {
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+  color: #141024;
+  font-size: 16px;
+  letter-spacing: 1.4px;
+}
+.whatGet__titleInfo::before {
+  display: inline-block;
+  content: url("../img/icons/Group 207.png");
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: -4px;
+}
+
+.row {
+  display: flex;
+  margin: 0 40px;
+}
+.row__item {
+  min-width: 360px;
+}
+.row__title {
+  font-size: 24px;
+  padding: 20px 10px;
+  font-weight: 600;
+  color: #141024;
+}
+.row__text {
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(20, 16, 36, 0.6980392157);
+}
+
+.trainers__title {
+  font-size: 50px;
+  color: #141024;
+  line-height: 80px;
+}
+.trainers__photo {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  position: relative;
+  left: -50px;
+  margin: 40px 0;
+}
+.trainers__item {
+  margin: 0px 20px;
+}
+
+.item__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.item__name {
+  font-size: 24px;
+  color: #141024;
+}
+.item__text {
+  font-size: 18px;
+  color: rgba(20, 16, 36, 0.6980392157);
+  margin: 20px 0;
+}
+.item__link {
+  font-size: 18px;
+  color: #ff0000;
+}
+
+.services {
+  margin: 0 0 50px 0;
+}
+.services__title {
+  font-size: 50px;
+  color: #141024;
+  margin: 0 0 60px 0;
+}
+.services__row {
+  display: flex;
+}
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 360px;
+  min-height: 500px;
+  min-width: 360px;
+  border: 1px solid rgba(20, 16, 36, 0.2);
+  border-radius: 20px;
+  margin: 0 40px;
+  padding: 30px;
+}
+.services__label {
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 30px;
+  color: #141024;
+  line-height: 48px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+.services__price {
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 50px;
+  line-height: 80px;
+  font-weight: 600;
+}
+.services__text {
+  font-size: 18px;
+  color: #141024;
+  line-height: 30px;
+  display: flex;
+  flex: 1 1 auto;
+  text-align: center;
+}
+.services__btn {
+  font-size: 18px;
+  color: #fff;
+  background: #ff0000;
+  padding: 30px;
+  min-width: 280px;
+  min-height: 80px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.ultra {
+  color: #fff;
+}
+
+.ultraplus {
+  background: #141024;
+}
+
+.formm {
+  padding: 50px 300px;
+  background: #ff0000;
+  min-width: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+.formm__info {
+  color: #fff;
+}
+.formm__title {
+  font-size: 36px;
+  line-height: 47px;
+}
+.formm__userForm input {
+  display: flex;
+  min-height: 64px;
+  min-width: 500px;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 18px;
+}
+.formm__btn button {
+  background: #141024;
+  color: #fff;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 500px;
+  min-height: 64px;
+  border-radius: 5px;
+}
+
+form .m {
+  margin: 10px 0;
+}
+
+.footer {
+  color: #fff;
+  background: #141024;
+  padding: 30px 50px;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo {
+  font-size: 30px;
+  margin: 0 0 10px 0;
+}
+.footer__capcha {
+  font-size: 16px;
+  color: #4b4a4a;
+}
+.footer__tel {
+  font-size: 30px;
+}
